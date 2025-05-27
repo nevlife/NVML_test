@@ -15,6 +15,8 @@ find_library(NVML_LIBRARY nvidia-ml
     /usr/lib64
     /usr/local/cuda/lib64
     /usr/local/cuda/lib
+    /usr/local/cuda-12.6/targets/x86_64-linux/lib
+    /usr/local/cuda-12.6/targets/x86_64-linux/lib/stubs
     $ENV{CUDA_PATH}/lib/x64
     "C:/Program Files/NVIDIA Corporation/NVSMI"
 )
@@ -27,6 +29,7 @@ endif()
 include_directories(
     ${CUDA_INCLUDE_DIRS}
     /usr/local/cuda/include
+    /usr/local/cuda-12.6/targets/x86_64-linux/include
     $ENV{CUDA_PATH}/include
     "C:/Program Files/NVIDIA Corporation/NVSMI"
 )

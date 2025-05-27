@@ -20,6 +20,7 @@ NVML_PATHS=(
     "/usr/lib/x86_64-linux-gnu/libnvidia-ml.so"
     "/usr/lib64/libnvidia-ml.so"
     "/usr/local/cuda/lib64/libnvidia-ml.so"
+    "/usr/local/cuda-12.6/targets/x86_64-linux/lib/stubs/libnvidia-ml.so"
 )
 
 NVML_FOUND=false
@@ -42,6 +43,7 @@ NVML_HEADER_PATHS=(
     "/usr/local/cuda/include/nvml.h"
     "/usr/include/nvml.h"
     "/opt/cuda/include/nvml.h"
+    "/usr/local/cuda-12.6/targets/x86_64-linux/include/nvml.h"
 )
 
 HEADER_FOUND=false
